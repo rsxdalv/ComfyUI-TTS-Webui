@@ -10,6 +10,7 @@ import time
 import wave
 import numpy as np
 import requests
+from .api_key import get_api_key
 import torch  # ensure AUDIO waveform is a torch.Tensor
 
 try:
@@ -165,8 +166,11 @@ class TTSWebUI_OpenAI_TTS:
         url = f"{base}/v1/audio/speech"
 
         headers = {"Content-Type": "application/json"}
-        if api_key:
-            headers["Authorization"] = f"Bearer {api_key}"
+
+        # Determine API key: prefer explicit node input, else fall back to environment/file via api_key.get_api_key()
+        effective_key = api_key if api_key else get_api_key()
+        if effective_key:
+            headers["Authorization"] = f"Bearer {effective_key}"
 
         # Build request payload
         if advanced_request_json and advanced_request_json.strip():
