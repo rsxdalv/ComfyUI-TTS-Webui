@@ -18,10 +18,10 @@ NODE_CLASS_MAPPINGS = {
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "TTSWebUI_OpenAI_TTS": "TTS WebUI via API",
-    "TTS_KokoroNode": "TTS Kokoro",
-    "TTS_ChatterboxNode": "TTS Chatterbox",
-    "TTS_StyleTTS2Node": "TTS StyleTTS2",
-    "TTS_KittenTTSNode": "TTS Kitten TTS",
-    "TTS_F5TTSNode": "TTS F5-TTS",
-    "TTS_GlobalPresetNode": "TTS Preset",
+    "TTS_KokoroNode": "TTS WebUI Kokoro",
+    "TTS_ChatterboxNode": "TTS WebUI Chatterbox",
+    "TTS_StyleTTS2Node": "TTS WebUI StyleTTS2",
+    "TTS_KittenTTSNode": "TTS WebUI Kitten TTS",
+    "TTS_F5TTSNode": "TTS WebUI F5-TTS",
+    "TTS_GlobalPresetNode": "TTS WebUI Preset",
 }
