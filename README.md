@@ -2,7 +2,7 @@
 
 This package provides a single ComfyUI custom node that calls a TTS WebUI OpenAI-style HTTP endpoint (POST /v1/audio/speech) and returns in-memory AUDIO usable in ComfyUI workflows.
 
-<!-- ![workflow example](workflow.png) -->
+![workflow example](workflow.png)
 
 ## What it does
 
